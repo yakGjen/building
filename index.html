@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Construction</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link href="app.css" rel="stylesheet"></head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-data">
+        <a href="#" class="header-data__logo">
+          <img src="./assets/common/logo.png" alt="logo">
+        </a>
+        <div class="header-data__schedule">
+          <p>Пн-Сб: c 10:00 до 20:00</p>
+          <p>Выходной: воскресенье</p>
+        </div>
+        <div class="header-data__order">
+          <button class="header-data__order-btn">
+            <img src="./assets/common/header-btn.svg" alt="image">
+          </button>
+          <p class="header-data__order-text">Заказать 3D-макет дома</p>
+        </div>
+        <div class="header-data__contacts">
+          <div class="header-data__contacts-img-wrap">
+            <img src="./assets/common/phone.svg" alt="image" class="header-data__contacts-img">
+          </div>
+          <div class="header-data__contacts-content">
+            <a href="#" class="header-data__contacts-content-phone">+7 (915) 168-55-50</a>
+            <div class="messengers">
+              <a href="#" class="messengers__link">
+                <img src="./assets/common/whatsapp.svg" alt="image" class="messengers__item">
+              </a>
+              <a href="#" class="messengers__link">
+                <img src="./assets/common/telegram.svg" alt="image" class="messengers__item">
+              </a>
+              <a href="#" class="messengers__link">
+                <img src="./assets/common/viber.svg" alt="image" class="messengers__item">
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="header-data__btn button">Заказать звонок</button>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Каталог домов</a>
+            <ul class="subnav">
+              <li class="subnav__item"><a href="#" class="subnav__link">Дома из оцилиндрованного бревна</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Дома из клееного бруса</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Кирпичные/каменные дома</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Блог</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main-top">
+
+      <div class="stickys">
+        <div class="sticky">
+          <img src="./assets/common/right-calc.svg" alt="img">
+          <p>Какой-то текст</p>
+        </div>
+        <div class="sticky">
+          <img src="./assets/common/right-binocular.svg" alt="img">
+          <p>Экскурсия на объект</p>
+        </div>
+        <div class="sticky">
+          <img src="./assets/common/right-circ.svg" alt="img">
+          <p>Какой-то текст</p>
+        </div>
+        <div class="sticky">
+          <img src="./assets/common/right-man.svg" alt="img">
+          <p>Какой-то текст</p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="main-top__main-content">
+          <h1 class="main-top__header">Построим дом мечты за 60 дней</h1>
+          <p class="main-top__subheader">Более 117 построенных домов и довольных клиентов в Москве и Московской области
+          </p>
+
+          <form method="POST" name="top-form" class="top-form form">
+            <div class="top-form__header-line">
+              <h4 class="top-form__header">Оставьте заявку</h4>
+              <div class="top-form__radios">
+                <input checked id="top-form-type-1" type="radio" name="top-form-type">
+                <label for="top-form-type-1">на строительство дома</label>
+
+                <input id="top-form-type-2" type="radio" name="top-form-type">
+                <label for="top-form-type-2">на другие услуги</label>
+              </div>
+            </div>
+            <p class="top-form__subheader">и получите бесплатную разводку электричества в подарок!</p>
+            <div class="top-form__inputs">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <select name="top-select">
+                <option value="Тип дома">Тип дома</option>
+                <option value="2">2</option>
+              </select>
+              <input type="submit" value="Отправить" class="button">
+              <p>
+                <img src="./assets/main/form-lock.png" alt="image">
+                Ваши данные не будут переданы третьим лицам
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="main-top__other-content"></div>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <section class="quiz-sec">
+        <div class="quiz-sec-static">
+          <p class="quiz-sec-static__upheader">
+            <img src="./assets/main/quiz-static-upheader.png" alt="image">
+            1 минута
+          </p>
+          <h3 class="quiz-sec-static__header">Пройдите тест и рассчитайте стоимость дома с точностью 97%</h3>
+          <p class="quiz-sec-static__subheader">Ответьте на 7 вопросов и получите один из трех подарков на выбор</p>
+          <div class="quiz-sec-static__bonuses">
+            <div class="quiz-sec-static__bonus">
+              <div class="quiz-sec-static__bonus-img-wrap">
+                <img src="./assets/main/quiz-static-1.png" alt="image" class="quiz-sec-static__bonus-img">
+              </div>
+              <p class="quiz-sec-static__bonus-text">Проведение отопление</p>
+            </div>
+
+            <div class="quiz-sec-static__bonus">
+              <div class="quiz-sec-static__bonus-img-wrap">
+                <img src="./assets/main/quiz-static-2.png" alt="image" class="quiz-sec-static__bonus-img">
+              </div>
+              <p class="quiz-sec-static__bonus-text">Проведение канализации</p>
+            </div>
+
+            <div class="quiz-sec-static__bonus">
+              <div class="quiz-sec-static__bonus-img-wrap">
+                <img src="./assets/main/quiz-static-3.png" alt="image" class="quiz-sec-static__bonus-img">
+              </div>
+              <p class="quiz-sec-static__bonus-text">Разводка водоснабжения</p>
+            </div>
+
+            <img src="./assets/main/quiz-static-arrow.png" alt="image" class="quiz-sec-static__arrow">
+          </div>
+        </div>
+        <form mathod="POST" name="quiz" class="quiz">
+          <div class="quiz__progress">
+            <p class="quiz__progress-text">Вопрос 1 из 7</p>
+            <p class="quiz__progress-line"></p>
+          </div>
+          <div class="quiz__slides">
+            <div class="quiz-slide">
+              <h4 class="quiz-slide__header">Какой дом хотите построить?</h4>
+              <div class="quiz-slide__inputs">
+                <input id="quest-1" type="radio" name="quest-1">
+                <label for="quest-1" class="quiz-slide__label">
+                  <img src="./assets/quiz/quiz-q-1.1.png" alt="image" class="quiz-slide__img">
+                  <p class="quiz-slide__text">Деревянный</p>
+                </label>
+
+                <input id="quest-2" type="radio" name="quest-1">
+                <label for="quest-2" class="quiz-slide__label">
+                  <img src="./assets/quiz/quiz-q-1.2.png" alt="image" class="quiz-slide__img">
+                  <p class="quiz-slide__text">Кирпичный/каменный</p>
+                </label>
+
+                <input id="quest-3" type="radio" name="quest-1">
+                <label for="quest-3" class="quiz-slide__label">
+                  <img src="./assets/quiz/quiz-q-1.3.png" alt="image" class="quiz-slide__img">
+                  <p class="quiz-slide__text">Пока не определился</p>
+                </label>
+              </div>
+
+              <div class="quiz-slide__btns">
+                <button type="button" class="quiz-slide__btn">
+                  Далее
+                  <img src="./assets/quiz/quiz-next.png" alt="image" class="quiz-slide__next">
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <section class="d3">
+      <div class="wrapper">
+        <div class="d3__form-wrap">
+          <img src="./assets/main/3d-img.jpg" alt="image" class="d3__form-wrap-img">
+          <form method="POST" name="d3__form-wrap-form" class="d3__form-wrap-form form">
+            <h6 class="d3__form-wrap-header">Закажите бесплатный 3D-макет дома</h6>
+            <div class="d3__form-wrap-inputs form-grid-inputs">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <select name="top-select">
+                <option value="Тип дома">Тип дома</option>
+                <option value="2">2</option>
+              </select>
+              <input type="submit" value="Отправить" class="button">
+              <p>
+                <img src="./assets/main/form-lock.png" alt="image">
+                Ваши данные не будут переданы третьим лицам
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="d3__content-wrap">
+          <img src="./assets/main/3d-arrow.png" alt="img">
+          <div class="d3__content">
+            <h2 class="d3__content-header">3D-макет будущего дома — гарантия точного воплощения всех ваших идей</h2>
+            <p class="d3__content-idea-name">
+              <img src="./assets/main/3d-eye.png" alt="image" class="d3__content-idea-img">
+              Наглядность
+            </p>
+            <p class="d3__content-idea-text">Мы тщательно собираем информацию от клиента, визуализируем полученные
+              сведения и даем вам возможность убедиться в том, что на этапе строительства не возникнет никаких проблем.
+              Ведь все учтено при создании 3D-макета!</p>
+
+            <p class="d3__content-idea-name">
+              <img src="./assets/main/3d-time.png" alt="image" class="d3__content-idea-img">
+              Экономия времени
+            </p>
+            <p class="d3__content-idea-text">Когда вы увидите свой воображаемый дом в виде 3D-макета, возможно, вам
+              захочется что-то изменить. И это нормально. Главное, что менять проект на этом этапе гораздо выгоднее с
+              точки зрения экономии времени, чем на этапе строительства.</p>
+
+            <p class="d3__content-idea-name">
+              <img src="./assets/main/3d-money.png" alt="image" class="d3__content-idea-img">
+              Экономия средств
+            </p>
+            <p class="d3__content-idea-text">Когда вы вносите изменения на этапе 3D-макета, очевидно, что вы страхуете
+              себя не только от траты времени, но и от значительных лищний расходов на исправление чего-то в процессе
+              строительства. Но! Будьте уверены, что на этапе сбора информации для 3D-макета мы делаем все возможное,
+              чтобы даже в макет вам не пришлось вносить никаких изменений.</p>
+            <p class="d3__content-idea-text_color">Убедитесь сами!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="examples">
+      <div class="wrapper">
+        <p class="examples__upheader">Эти дома мечты уже нашли своих счастливых владельцев!</p>
+        <h2 class="examples__header">Посмотрите, какие проекты домов мы уже реализовали</h2>
+        <div class="examples__btns">
+          <button class="examples__btn examples__btn_active">Дома из бревна</button>
+          <button class="examples__btn">Дома из клееного бруса</button>
+          <button class="examples__btn">Кирпичные/каменные дома</button>
+        </div>
+        <div class="examples__sliders">
+          <div class="examples__slider">
+            <div class="examples__slides swiper-container">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./assets/main/ex-1.jpg" alt="image">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/main/ex-2.jpg" alt="image">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/main/ex-3.jpg" alt="image">
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <img src="./assets/quiz/quiz-next.png" alt="image">
+              </div>
+              <div class="swiper-button-next">
+                <img src="./assets/quiz/quiz-next.png" alt="image">
+              </div>
+            </div>
+            <a href="#" class="examples__link button">
+              Перейти в каталог
+              <img src="./assets/common/arrow-white.png" alt="image">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <section class="services">
+        <h3 class="services__header">Также предлагаем большой выбор услуг</h3>
+        <p class="services__subheader">Услуги выполняют специалисты с опытом работы от 10 лет. На все работы даем
+          гарантию</p>
+        <div class="services__slider">
+          <div class="services__slider-btns">
+            <button class="services__slider-btn services__slider-btn_active">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.7195 1.20187C10.472 0.827695 10.3086 0.580508 10.3086 0H8.66797C8.66797 1.07379 9.04662 1.64653 9.35085 2.10673C9.59831 2.4809 9.76172 2.72809 9.76172 3.30859C9.76172 3.8891 9.59826 4.13629 9.35085 4.51046C9.04662 4.97066 8.66797 5.5434 8.66797 6.61719H10.3086C10.3086 6.03668 10.472 5.78949 10.7195 5.41532C11.0237 4.95513 11.4023 4.38238 11.4023 3.30859C11.4023 2.2348 11.0237 1.66206 10.7195 1.20187Z"
+                  fill="white" />
+                <path
+                  d="M7.43821 1.20187C7.19075 0.827695 7.02734 0.580508 7.02734 0H5.38672C5.38672 1.07379 5.76537 1.64653 6.0696 2.10673C6.31706 2.4809 6.48047 2.72809 6.48047 3.30859C6.48047 3.8891 6.31701 4.13629 6.0696 4.51046C5.76537 4.97066 5.38672 5.5434 5.38672 6.61719H7.02734C7.02734 6.03668 7.19075 5.78949 7.43821 5.41532C7.74244 4.95513 8.12109 4.38238 8.12109 3.30859C8.12109 2.2348 7.74244 1.66206 7.43821 1.20187Z"
+                  fill="white" />
+                <path
+                  d="M14.0007 1.20187C13.7533 0.827695 13.5898 0.580508 13.5898 0H11.9492C11.9492 1.07379 12.3279 1.64653 12.6321 2.10673C12.8796 2.4809 13.043 2.72809 13.043 3.30859C13.043 3.8891 12.8795 4.13629 12.6321 4.51046C12.3279 4.97066 11.9492 5.5434 11.9492 6.61719H13.5898C13.5898 6.03668 13.7533 5.78949 14.0007 5.41532C14.3049 4.95513 14.6836 4.38238 14.6836 3.30859C14.6836 2.2348 14.3049 1.66206 14.0007 1.20187Z"
+                  fill="white" />
+                <path
+                  d="M17.282 1.20187C17.0345 0.827695 16.8711 0.580508 16.8711 0H15.2305C15.2305 1.07379 15.6091 1.64653 15.9134 2.10673C16.1608 2.4809 16.3242 2.72809 16.3242 3.30859C16.3242 3.8891 16.1608 4.13629 15.9134 4.51046C15.6091 4.97066 15.2305 5.5434 15.2305 6.61719H16.8711C16.8711 6.03668 17.0345 5.78949 17.282 5.41532C17.5862 4.95513 17.9648 4.38238 17.9648 3.30859C17.9648 2.2348 17.5862 1.66206 17.282 1.20187Z"
+                  fill="white" />
+                <path
+                  d="M20.5632 1.20187C20.3158 0.827695 20.1523 0.580508 20.1523 0H18.5117C18.5117 1.07379 18.8904 1.64653 19.1946 2.10673C19.4421 2.4809 19.6055 2.72809 19.6055 3.30859C19.6055 3.8891 19.442 4.13629 19.1946 4.51046C18.8904 4.97066 18.5117 5.5434 18.5117 6.61719H20.1523C20.1523 6.03668 20.3158 5.78949 20.5632 5.41532C20.8674 4.95513 21.2461 4.38238 21.2461 3.30859C21.2461 2.2348 20.8674 1.66206 20.5632 1.20187Z"
+                  fill="white" />
+                <path
+                  d="M16.5156 8.25781C15.3075 8.25781 14.3281 9.23721 14.3281 10.4453V25.8125C14.3281 27.0206 15.3075 28 16.5156 28C17.7237 28 18.7031 27.0206 18.7031 25.8125V10.4453C18.7031 9.23721 17.7237 8.25781 16.5156 8.25781Z"
+                  fill="white" />
+                <path
+                  d="M4.10156 8.25781C2.89346 8.25781 1.91406 9.23721 1.91406 10.4453V11.2656H0V12.9062H1.91406V25.8125C1.91406 27.0206 2.89346 28 4.10156 28C5.30966 28 6.28906 27.0206 6.28906 25.8125V10.4453C6.28906 9.23721 5.30966 8.25781 4.10156 8.25781Z"
+                  fill="white" />
+                <path
+                  d="M10.5 8.25781C9.2919 8.25781 8.3125 9.23721 8.3125 10.4453V25.8125C8.3125 27.0206 9.2919 28 10.5 28C11.7081 28 12.6875 27.0206 12.6875 25.8125V10.4453C12.6875 9.23721 11.7081 8.25781 10.5 8.25781Z"
+                  fill="white" />
+                <path
+                  d="M26.3594 9.29688V11.2656H24.7188V10.4453C24.7188 9.23721 23.7394 8.25781 22.5312 8.25781C21.3231 8.25781 20.3438 9.23721 20.3438 10.4453V25.8125C20.3438 27.0206 21.3231 28 22.5312 28C23.7394 28 24.7188 27.0206 24.7188 25.8125V12.9062H28V9.29688H26.3594Z"
+                  fill="white" />
+              </svg>
+              Монтаж систем отопления
+            </button>
+            <button class="services__slider-btn">
+              <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.1144 6.20367L23.2469 0.600996C23.1273 0.242109 22.7914 0 22.4131 0H3.58503C3.20675 0 2.87089 0.242109 2.75125 0.600996L0.868336 6.24943C0.779039 6.51744 0.823922 6.81211 0.989156 7.04133C1.15433 7.27049 1.4197 7.40631 1.70218 7.40631H3.64744V22.5938H2.64349C2.1581 22.5938 1.76459 22.9873 1.76459 23.4727C1.76459 23.958 2.1581 24.3516 2.64349 24.3516H3.64738V29.1211C3.64738 29.6065 4.04089 30 4.52628 30H21.4716C21.957 30 22.3505 29.6065 22.3505 29.1211V24.3516H23.3545C23.8399 24.3516 24.2334 23.9581 24.2334 23.4727C24.2334 22.9873 23.8399 22.5938 23.3545 22.5938H22.3505V7.40631H24.2959C24.2963 7.40631 24.2968 7.40631 24.2971 7.40631C24.7825 7.40631 25.176 7.01279 25.176 6.5274C25.176 6.41309 25.1541 6.30387 25.1144 6.20367ZM20.5928 22.5938H20.5927H5.40519V7.40631H12.12V11.2969H10.1748C9.68939 11.2969 9.29587 11.6904 9.29587 12.1758V17.8241C9.29587 18.3096 9.68939 18.703 10.1748 18.703H15.8233C16.3087 18.703 16.7022 18.3096 16.7022 17.8241V12.1758C16.7022 11.6904 16.3087 11.2969 15.8233 11.2969H13.8779V7.40631H20.5928V22.5938Z" fill="#319F1C"/>
+              </svg>
+              Обустройство скважин                
+            </button>
+            <button class="services__slider-btn">
+              <svg width="29" height="31" viewBox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.5995 13.8217C20.8469 13.7643 21.023 13.5453 21.0259 13.2914V10.9159C21.0259 10.7716 20.9686 10.6333 20.8666 10.5314L13.7964 3.46118C13.584 3.24886 13.2398 3.24886 13.0274 3.46118L5.9572 10.5314C5.8552 10.6333 5.79788 10.7716 5.79785 10.9159V18.4913C5.79785 18.7916 6.04135 19.0351 6.34171 19.0351H7.42943C7.7298 19.0351 7.97329 18.7916 7.97329 18.4913V13.0527C7.97329 12.452 8.46028 11.965 9.06101 11.965H12.3242C12.9249 11.965 13.4119 12.452 13.4119 13.0527V18.4913C13.4119 18.7916 13.6554 19.0351 13.9557 19.0351H14.901C15.1389 19.0336 15.3482 18.8776 15.4176 18.6501C16.2061 16.2607 18.1605 14.4396 20.5995 13.8217Z" fill="#319F1C"/>
+                <path d="M8.51772 26.3772C8.51864 25.8024 8.77873 25.2587 9.22566 24.8973C9.67259 24.5358 10.2587 24.3952 10.821 24.5145C11.7112 24.7196 12.3376 25.5182 12.3247 26.4316V27.7369C12.3247 28.0372 12.5682 28.2807 12.8686 28.2807H13.9563C14.2567 28.2807 14.5002 28.0372 14.5002 27.7369V26.5252C14.53 24.3772 12.9266 22.5565 10.7921 22.3146C9.66186 22.2127 8.54016 22.5858 7.69602 23.3443C6.85188 24.1028 6.36143 25.1784 6.34228 26.3131C6.34418 27.3138 5.59581 28.1571 4.60193 28.2742C4.07061 28.3199 3.54447 28.1407 3.15159 27.78C2.75872 27.4194 2.53513 26.9105 2.53527 26.3772V19.8509C2.53527 18.7996 3.3875 17.9474 4.43877 17.9474H4.7107V15.772H4.43877C2.18604 15.772 0.35983 17.5982 0.35983 19.8509V26.2353C0.329278 28.3198 1.84126 30.1074 3.90199 30.423C5.0672 30.5759 6.2418 30.2195 7.12556 29.4448C8.00932 28.6702 8.5166 27.5524 8.51772 26.3772Z" fill="#319F1C"/>
+                <path d="M11.7808 19.0351C12.0812 19.0351 12.3247 18.7916 12.3247 18.4912V13.0526H9.06152V18.4912C9.06152 18.7916 9.30502 19.0351 9.60538 19.0351H11.7808Z" fill="#319F1C"/>
+                <path d="M6.34171 1.63159C6.04135 1.63159 5.79785 1.87509 5.79785 2.17545V6.07601L7.42943 4.44443V2.17545C7.42943 1.87509 7.18594 1.63159 6.88557 1.63159H6.34171Z" fill="#319F1C"/>
+                <path d="M12.6429 0.769031L2.91923 10.4927C2.70672 10.7051 2.7066 11.0495 2.91895 11.262C3.13131 11.4745 3.47574 11.4746 3.68824 11.2623L12.6429 2.30761C13.0676 1.88298 13.7562 1.88298 14.1809 2.30761L23.1356 11.2623C23.349 11.4684 23.6882 11.4654 23.898 11.2556C24.1078 11.0458 24.1107 10.7066 23.9046 10.4932L14.1809 0.769031C13.7562 0.344405 13.0676 0.344405 12.6429 0.769031Z" fill="#319F1C"/>
+                <path d="M22.3862 14.6842C18.932 14.6842 16.1318 17.4844 16.1318 20.9386C16.1318 24.3928 18.932 27.193 22.3862 27.193C25.8404 27.193 28.6406 24.3928 28.6406 20.9386C28.6367 17.486 25.8388 14.6881 22.3862 14.6842ZM22.3862 25.5614C20.735 25.5596 19.3968 24.2214 19.395 22.5702C19.395 21.4504 20.7291 18.2133 21.4269 16.8944C21.616 16.5404 21.9848 16.3193 22.3862 16.3193C22.7876 16.3193 23.1564 16.5404 23.3456 16.8944C24.0434 18.2133 25.3774 21.4504 25.3774 22.5702C25.3757 24.2214 24.0375 25.5596 22.3862 25.5614Z" fill="#319F1C"/>
+                <path d="M11.6477 31H15.1763C15.3716 30.9998 15.5518 30.8948 15.6484 30.7251C15.7449 30.5553 15.7431 30.3468 15.6434 30.1788L15.3209 29.6349C15.223 29.4698 15.0452 29.3685 14.8532 29.3684H11.9708C11.7787 29.3685 11.601 29.4698 11.503 29.6349L11.1805 30.1788C11.0809 30.3468 11.0791 30.5553 11.1756 30.7251C11.2722 30.8948 11.4524 30.9998 11.6477 31Z" fill="#319F1C"/>
+                <path d="M20.4824 22.5702C20.4824 23.6214 21.3347 24.4737 22.3859 24.4737C23.4372 24.4737 24.2894 23.6214 24.2894 22.5702C24.2894 21.7636 23.1006 18.7583 22.3859 17.4035C21.6713 18.7583 20.4824 21.7636 20.4824 22.5702Z" fill="#319F1C"/>
+              </svg>
+              Разводка водоснабжения                
+            </button>
+            <button class="services__slider-btn">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.7816 16.724V17.7863C10.7816 18.5355 10.172 19.145 9.42277 19.145C8.67354 19.145 8.06396 18.5354 8.06396 17.7863V0H1.20898V17.7862C1.20898 22.3153 4.89363 26 9.42277 26C13.9519 26 17.6365 22.3154 17.6365 17.7862V16.724H10.7816Z" fill="#319F1C"/>
+                <path d="M18.8279 11.9911H9.58984V15.2006H18.8279V11.9911Z" fill="#319F1C"/>
+                <path d="M24.7906 0H21.5811V9.23809H24.7906V0Z" fill="#319F1C"/>
+                <path d="M10.7812 9.40543V10.4677H17.6362V9.40543C17.6362 8.65615 18.2458 8.04663 18.995 8.04663H20.0572V1.19165H18.995C14.4659 1.19165 10.7812 4.87635 10.7812 9.40543Z" fill="#319F1C"/>
+              </svg>
+              Разводка канализации                
+            </button>
+            <button class="services__slider-btn">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M30.0004 13.1889H26.2988V23.8481H30.0004V13.1889Z" fill="#319F1C"/>
+                <path d="M3.70152 13.1889H0V23.8481H3.70152V13.1889Z" fill="#319F1C"/>
+                <path d="M19.0317 12.1386V9.20801H10.969V12.1386C10.0738 12.704 9.29513 13.4572 8.69736 14.3618H5.45996V22.6754H8.69742C10.0885 24.7807 12.4579 26.0685 15.0003 26.0685C17.5427 26.0685 19.9121 24.7806 21.3032 22.6754H24.5407V14.3617H21.3033C20.7056 13.4571 19.9268 12.704 19.0317 12.1386Z" fill="#319F1C"/>
+                <path d="M8.32812 3.93155V5.68941H12.3609V7.45008H17.6374V5.68941H21.6701V3.93155H8.32812Z" fill="#319F1C"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="30" height="30" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              Установка автономной канализации                
+            </button>
+            <button class="services__slider-btn">
+              <svg width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.18635 18.597C4.95507 19.2482 5.4648 20.1304 5.64896 21.0935H10.1214V14.8296C8.60678 14.4383 7.4846 13.0603 7.4846 11.425H9.24248C9.24248 12.3943 10.0311 13.1829 11.0004 13.1829C11.9697 13.1829 12.7582 12.3943 12.7582 11.425H14.5161C14.5161 13.0602 13.394 14.4383 11.8793 14.8296V21.0934H16.3528C16.5389 20.1306 17.0535 19.244 17.8295 18.5841C20.1924 16.5749 21.5477 13.6451 21.5477 10.5461C21.5477 1.09151 10.0171 -3.55169 3.45062 3.19423C-0.834864 7.59702 -0.468522 14.6539 4.18635 18.597Z" fill="#319F1C"/>
+                <path d="M11.0001 30C12.9387 30 14.5159 28.4228 14.5159 26.4842H7.48438C7.48438 28.4228 9.06155 30 11.0001 30Z" fill="#319F1C"/>
+                <path d="M5.72656 22.8513H16.2738V24.7263H5.72656V22.8513Z" fill="#319F1C"/>
+              </svg>
+              Монтаж электрики                
+            </button>
+          </div>
+          <div class="services__slides">
+            <div class="services__slide">
+              <div class="service">
+                <div class="service__row">
+                  <img src="./assets/main/service.jpg" alt="image" class="service__img">
+                  <div class="service__content-1">
+                    <h5 class="service__header bold">Монтаж систем отопления</h5>
+                    <p class="service__text">От правильного монтажа системы водоснабжения в частном доме зависит не только комфортное проживание, но и последующие расходы на содержание и ремонт всех коммуникаций.</p>
+                  </div>
+                </div>
+                <div class="service__row">
+                  <div class="service__content-2">
+                    <p class="service__subheader bold">Мы предлагаем установку:</p>
+                    <ul class="service__list">
+                      <li class="service__list-item">Газовых/электрических котлов</li>
+                      <li class="service__list-item">Твердотопливных котлов</li>
+                      <li class="service__list-item">Пеллетных котлов</li>
+                    </ul>
+                  </div>
+                  <a href="#" class="service__btn button">
+                    Подробнее
+                    <img src="./assets/common/arrow-white.png" alt="image">
+                  </a>
+                </div>
+              </div>
+              <form method="POST" name="services__slide-form" class="services__slide-form form">
+                <h6 class="services__slide-form-header bold">Оставьте заявку</h6>
+                <p class="services__slide-form-subheader">На монтаж систем отопления</p>
+                <p class="services__slide-form-text">
+                  со скидкой
+                  <span>5%!</span>
+                </p>
+                <select type="text" placeholder="">
+                  <option value="services__slide-form-1">Тип котла</option>
+                  <option value="services__slide-form-2">#1</option>
+                  <option value="services__slide-form-3">#2</option>
+                </select>
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Номер телефона">
+                <input type="submit" value="Отправить" class="button">
+                <p class="services__slide-form-bottom-text">
+                  <img src="./assets/main/form-lock.png" alt="image">
+                  Ваши данные не будут переданы третьим лицам
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <p class="advantages__upheader center">Чем мы лучше других?</p>
+        <h3 class="advantages__header bold center">Наши преимущества — это реальные цифры, которыми мы гордимся</h3>
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <div class="advantages__item-row">
+              Более
+              <span>117</span>
+            </div>
+            <div class="advantages__item-row">
+              <img src="./assets/main/advant-1.png" alt="image">
+              <p>построенных домов</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__item-row">
+              <span>60</span>
+              Дней
+            </div>
+            <div class="advantages__item-row">
+              <img src="./assets/main/advant-2.png" alt="image">
+              <p>на строительство дома</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__item-row">
+              <span>5</span>
+              Лет
+            </div>
+            <div class="advantages__item-row">
+              <img src="./assets/main/adv-3.png" alt="image">
+              <p>гарантии на работы</p>
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__item-row">
+              <span>20</span>
+              Лет
+            </div>
+            <div class="advantages__item-row">
+              <img src="./assets/main/adv-4.png" alt="image">
+              <p>гарантии на материалы</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="founders">
+        <div class="founders__img-wrap">
+          <img src="./assets/main/founders.png" alt="image">
+        </div>
+        <div class="founders__content">
+          <div class="founders__quot-left">
+            <img src="./assets/main/quot-left.png" alt="image">
+          </div>
+          <div class="founders__content-center">
+            <p class="founders__upheader">Основатели компании «Alfa Repair Building»</p>
+            <h3 class="founders__header bold">Стародубцев Егор Николаевич и Пожарицкий Роман Николаевич:</h3>
+            <p class="founders__text">За годы существования компании мы сформировали основные принципы нашей работы, от которых никогда не отступаем:</p>
+            <p class="founders__text"><span class="bold">Клиент всегда прав,</span> но он может не знать, как лучше. Поэтому наша задача, как специалистов, показать все наилучшие варианты для выполнения задачи заказчика.</p>
+            <p class="founders__text"><span class="bold">Репутация — наше всё.</span> За каждый заказ мы несем личную ответственность — от руководителя до специалиста рабочей (строительной) бригады. Мы прекрасно знаем, как работает «сарафанное радио», поэтому не рискуем выполнять работу спустя рукава.</p>
+            <p class="founders__text"><span class="bold">Все условия прописаны в договоре.</span> Не важно, как вы к нам пришли — по рекомендации знакомых или из интернета — основой нашего сотрудничества является договор. Это гарантия взаимопонимания клиента и исполнителя.</p>
+          </div>
+          <div class="founders__quot-right">
+            <img src="./assets/main/quot-left.png" alt="image">
+          </div>
+        </div>
+      </section>
+
+      <section class="brigades">
+        <div class="brigades__content">
+          <h3 class="brigades__header bold">Наша команда состоит из 5 бригад, сплоченных одной целью — безупречно делать свою работу</h3>
+          <p class="brigades__text">
+            Компания работает с 2016 года. Первый заказ был на строительный объект из оцилиндрованного бревна  в Дмитровском районе, п. Ольшаны. От закладки фундамента до укладки кровли — все работы были выполнены качественно и в срок. После первого заказа мы убедились, что занимаемся своим делом, и с тех пор не разочаровали ни одного заказчика.
+            <span class="bold">Это доказывают реальные отзывы!</span>
+          </p>
+          <a href="#" class="brigades__btn button">Подробнее о компании</a>
+          <img src="./assets/main/3d-arrow.png" alt="image">
+        </div>
+      </section>
+    </div>
+
+    <section class="feedbacks">
+      <div class="feedbacks__img-wrap">
+        <img src="./assets/main/feedbacks-circ.png" alt="image">
+      </div>
+      <div class="feedback">
+        <div class="feedback__content">
+          <p class="feedback__date">24.10.2019</p>
+          <h6 class="feedback__name bold">Сергей Миронов</h6>
+          <p class="feedback__position">Владелец компании «JOY»</p>
+          <p class="feedback__text">Огромное спасибо за профессиональный подход к делу!  Когда встал вопрос о выборе компании для строительства дома, решили сразу, только Зодчий. Цена, качество, сроки строительства, по этим категориям конкурентов нет.</p>
+          <a href="#" class="feedback__btn button">Смотреть все отзывы</a>
+        </div>
+        <img src="./assets/main/feedbacks-item.png" alt="image" class="feedback__img">
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <section class="request">
+        <div class="request__content">
+          <h3 class="request__header bold">Остались вопросы?</h3>
+          <p class="request__subheader">Свяжитесь с нами, приезжайте в офис или оставьте заявку</p>
+          <div class="request__data">
+            <a href="#" class="request__address">
+              <img src="./assets/main/req-location.png" alt="image">
+              <span class="bold">Адрес: </span>
+              Московская область, г. Чехов, Ул. Чехова, дом 79, корпус 3
+            </a>
+            <a href="tel:+7 (915) 168-55-50" class="request__phone">
+              <img src="./assets/main/req-phone.png" alt="image">
+              <span class="bold">Телефон: </span>
+              +7 (915) 168-55-50
+            </a>
+
+            <div class="messengers">
+              <a href="#" class="messengers__link">
+                <img src="./assets/common/whatsapp.svg" alt="image" class="messengers__item">
+              </a>
+              <a href="#" class="messengers__link">
+                <img src="./assets/common/telegram.svg" alt="image" class="messengers__item">
+              </a>
+              <a href="#" class="messengers__link">
+                <img src="./assets/common/viber.svg" alt="image" class="messengers__item">
+              </a>
+            </div>
+
+            <a href="mailto:alfa-building@yandex.by" class="request__email">
+              <img src="./assets/main/req-email.png" alt="image">
+              <span class="bold">Емейл:</span>
+              alfa-building@yandex.by
+            </a>
+          </div>
+          <img src="./assets/main/3d-arrow.png" alt="image" class="request__arrow">
+          <div class="request__map-wrap">
+            <img src="./assets/main/req-map.jpg" alt="image" class="request__map">
+          </div>
+        </div>
+        <form method="POST" name="request-form" class="request-form form">
+          <h5 class="request-form__header bold">Заявка на консультацию</h5>
+          <input type="text" placeholder="Ваше имя">
+          <select>
+            <option value="Выберите услугу">Выберите услугу</option>
+            <option value="Услуга 1">Услуга 1</option>
+            <option value="Услуга 2">Услуга 2</option>
+            <option value="Услуга 3">Услуга 3</option>
+          </select>
+          <input type="date" placeholder="">
+          <select>
+            <option value="Расположение объекта">Расположение объекта</option>
+            <option value="Расположение объекта 1">Расположение объекта 1</option>
+            <option value="Расположение объекта 2">Расположение объекта 2</option>
+            <option value="Расположение объекта 3">Расположение объекта 3</option>
+          </select>
+          <select>
+            <option value="Как с вами связаться?">Как с вами связаться?</option>
+            <option value="Viber">Viber</option>
+            <option value="Telegram">Telegram</option>
+            <option value="Whatsapp">Whatsapp</option>
+          </select>
+          <textarea rows="5" placeholder="Ваш вопрос или доп. информация"></textarea>
+          <input type="submit" value="Заказать консультацию" class="button">
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__logo-wrap">
+        <img src="./assets/common/footer-logo.png" alt="image" class="footer__logo">
+        <button class="footer__btn">Заказать звонок</button>
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Главная</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Экскурсия на объект</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Каталог</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">3D-макет дома</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Услуги</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Расчет стоимости</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Блог</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Консультация архитектора</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__other">
+        <p class="footer__other-text">Делимся крутыми проектами в соц.сетях. Подписывайтесь!</p>
+        <div class="f-socials footer__socials">
+          <a href="#" class="f-socials__item">
+            <img src="./assets/common/f-vk.png" alt="imag">
+          </a>
+          <a href="#" class="f-socials__item">
+            <img src="./assets/common/f-insta.png" alt="imag">
+          </a>
+          <a href="#" class="f-socials__item">
+            <img src="./assets/common/f-facebook.png" alt="imag">
+          </a>
+          <a href="#" class="f-socials__item">
+            <img src="./assets/common/f-youtobe.png" alt="imag">
+          </a>
+        </div>
+        <p class="footer__other-text footer__other-text_m-0">Разработка и продвижение сайта:</p>
+        <img src="./assets/common/footer-company.png" alt="image" class="footer__other-logo">
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="bundle.js"></script></body>
+
+</html>
